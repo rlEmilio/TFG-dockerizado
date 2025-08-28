@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Inicio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="icon" type="image/x-icon" href="assets/img/logo_sakura.png">
+
+  <!-- Favicons -->
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <script src="assets/js/comprobar_usuario_logueado.js"></script>
+  <script src="assets/js/responsivo_logeado.js"></script>
+
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        
+        <img src="./assets/img/logo_sakura.png" alt="logo">
+        <h1 class="sitename">KoeShiru</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="actores_de_voz/index.html">Actores de voz</a></li>
+          <li><a href="productos/index.html">Productos</a></li>
+          <li><a href="premium/index.html">Premium</a></li>
+          <li class="dropdown"><a href="#"><span>Comunidad</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="clubs/index.html">Clubs</a></li>
+              <li><a href="foro/index.html">Foros</a></li>
+            </ul>
+          </li>
+          <li class="d-md-none" id="logueadoResponsive">
+            <div class="mt-2 d-flex align-items-center">
+              <a href="../perfil_usuario/index.html">
+                <img id="imgResponsive" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" class="user-img rounded-circle me-2 text-center" alt="Avatar" style="width: 50px; height: 50px;">
+              </a>
+              <a href="../usuarios/iniciarsesion/index.html" class="cta-btn-responsive w-auto text-center" id="cerrarResponsive">Cerrar Sesión</a>
+            </div>
+          </li>
+          <li class="d-md-none" id="nologueadoResponsive">
+            <div class="mt-2 d-flex align-items-center">
+              <a href="usuarios/iniciarsesion/index.html" class="cta-btn-responsive w-auto text-center me-2 ms-4">Iniciar sesión</a>
+              <a href="usuarios/registrarse/index.html" class="cta-btn-responsive w-auto text-center ms-2">Registrarse</a>
+            </div>
+          </li>
+        </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+    <div class="me-5">
+      <form class="d-none d-md-flex">
+        <div id="logueado">
+          <a href="perfil_usuario/index.html"><img src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+              class="user-img ms-4 mb-3" alt="Avatar" class="rounded-circle me-2" id="imagen_usuario"></a>
+          <a href="usuarios/iniciarsesion/index.html" class="cta-btn " type="submit" id="cerrar">Cerrar Sesión</a>
+        </div>
+        <div id="nologueado" class="btn-nav-user">
+          <a href="usuarios/iniciarsesion/index.html" class="cta-btn " type="submit">Iniciar sesión</a>
+          <a href="usuarios/registrarse/index.html" class="cta-btn " type="submit">Registrarse</a>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background ">
+
+      <img src="assets/img/nubes-naranjas.jpg" alt="fondo" data-aos="fade-in" class="hero-bg">
+
+      <div class="container d-flex flex-column align-items-center mb-5">
+        <h2 data-aos="fade-up" data-aos-delay="100">CONOCE LAS VOCES</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Conoce su historia y dales voz</p>
+
+        <div class="mt-5" data-aos-delay="300" data-aos="fade-up">
+          <a href="#titulo-principal">
+            <i class="bi bi-arrow-down-circle fs-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre la seccion -->
+    <section id="about" class="about section position-relative">
+
+      <div class="d-flex justify-content-center align-items-center div-carousel">
+        <div id="mainCarousel" class="carousel slide w-75 mx-auto" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/1.png" class="d-block w-100 img-fluid mx-auto" alt="publicidad">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/2.png" class="d-block w-100 img-fluid mx-auto" alt="publicidad">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 id="titulo-principal">Noticias recientes que debes conocer</h3>
+            <img src="assets/img/about.png" class="img-fluid rounded-4 mb-4" alt="recopilacion actores">
+            <p>Corre el año 2052 y en todo el planeta reina una era de paz y prosperidad sin precedentes. La razón: la
+              humanidad se ha librado de la enfermedad y el dolor. El Dr. Skinner, neurocientífico galardonado con el
+              Premio Nobel, ha desarrollado un medicamento milagroso que lo cura todo, sin inconvenientes aparentes,
+              llamado Hapuna. Hapuna pronto se convierte en omnipresente… y esencial. Sin embargo, poco después de la
+              introducción oficial de Hapuna.</p>
+            <p>En "Lazaro", el elenco de actores de voz reúne a algunas de las figuras más reconocidas del anime actual.
+              Jun Fukuyama, conocido por su papel de Lelouch en Code Geass, aporta su característico tono sofisticado al
+              enigmático Dr. Skinner. Kana Hanazawa, célebre por su trabajo en Steins;Gate y Demon Slayer, interpreta
+              con sensibilidad a Rina, la periodista que comienza a cuestionar la verdad. Yuichi Nakamura, famoso por su
+              papel como Gojo en Jujutsu Kaisen.</p>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Lazarus (ラザロ Razaro) es una serie de televisión de anime original japonesa que se estrenó el 6 de abril
+                de 2025 en los Estados Unidos en el bloque de programación Toonami de Adult Swim.
+              </p>
+              <p>
+                Corre el año 2052 y la humanidad vive en una era dorada gracias a Hapuna, un medicamento revolucionario
+                creado por el Dr. Skinner que cura todas las enfermedades. Sin embargo, tras su masiva adopción,
+                comienzan a surgir misteriosos efectos secundarios que amenazan con destruir todo lo que Hapuna prometía
+                proteger. Un grupo de valientes descubrirá que la cura perfecta podría ser la peor condena de la
+                humanidad.
+              </p>
+
+              <div class="position-relative mt-4">
+                <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="video">
+                <a href="https://www.youtube.com/embed/kMC9M0ZkCjE" class="glightbox pulsating-play-btn"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Section -->
+      <section id="services" class=" light-background services section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Actores</h2>
+          <p>Top del mes<br></p>
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="row gy-5">
+
+            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+              <div class="service-item">
+                <div class="img">
+                  <img src="assets/img/actor-top-1.jpg" class="img-fluid actor-top" alt="actor 1">
+                </div>
+                <div class="details position-relative">
+                  <h3>Yūichi Nakamura</h3>
+                  </a>
+                  <p>Ganador del premio a Mejor Interpretación de Voz (Japonés) en los Crunchyroll Anime Awards 2024 por
+                    su papel como Satoru Gojo en Jujutsu Kaisen . Además, fue reconocido como el "Seiyuu Más Valioso" en
+                    los 18.º Seiyu Awards .</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+              <div class="service-item">
+                <div class="img">
+                  <img src="assets/img/actor-top-2.jpg" class="img-fluid actor-top" alt="actor 2">
+                </div>
+                <div class="details position-relative">
+                  <h3>Kana Ichinose</h3>
+                  </a>
+                  <p>Premiada como Mejor Actriz Principal en los 18.º Seiyu Awards por su interpretación en Mobile Suit
+                    Gundam: The Witch from Mercury .</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+              <div class="service-item">
+                <div class="img">
+                  <img src="assets/img/actor-top-3.jpg" class="img-fluid actor-top" alt="actor 3">
+                </div>
+                <div class="details position-relative">
+                  <h3>Kazuki Ura</h3>
+                  </a>
+                  <p>Kazuki Ura (浦 和希) es un actor de voz japonés nacido el 18 de octubre de 1995 en la prefectura de Osaka. Desde 2018, está afiliado a la agencia VIMS y ha ganado reconocimiento por sus interpretaciones en diversos animes .</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+              <div class="service-item">
+                <div class="img">
+                  <img src="assets/img/actor-top-4.jpg" class="img-fluid actor-top" alt="actor 4">
+                </div>
+                <div class="details position-relative">
+                  <h3>Mamoru Miyano</h3>
+                  </a>
+                  <p>Reconocido por su versatilidad y carisma, ha sido aclamado por sus actuaciones en roles como Light
+                    Yagami en Death Note y Kotaro Tatsumi en Zombie Land Saga .</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+              <div class="service-item">
+                <div class="img">
+                  <img src="assets/img/actor-top-5.jpg" class="img-fluid actor-top" alt="actor 5">
+                </div>
+                <div class="details position-relative">
+                  <h3>Yūki Kaji</h3>
+                  </a>
+                  <p>Conocido por su papel como Eren Jaeger en Attack on Titan, ha sido nominado y premiado en múltiples
+                    ocasiones, incluyendo los Crunchyroll Anime Awards y los Seiyu Awards .</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
+              <div class="service-item">
+                <div class="img">
+                  <img src="assets/img/actor-top-6.jpg" class="img-fluid actor-top" alt="actor 6">
+                </div>
+                <div class="details position-relative">
+                  <h3>Yūma Uchida</h3>
+                  </a>
+                  <p>Yūma Uchida es un talentoso actor de voz japonés conocido principalmente por su interpretación de
+                    Ash
+                    Lynx en Banana Fish, donde destacó por su capacidad para transmitir emociones intensas y complejas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Services 2 Section -->
+      <section id="services-2" class="services-2 section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Cuestionarios</h2>
+          <p>DESCUBRE QUE PERSONAJE ERES</p>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+          <div class="row gy-4">
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-item d-flex position-relative h-100">
+                <div class="img img-cuestionario me-4">
+                  <img src="assets/img/cuestionario-3.png" class="img-fluid" alt="test1">
+                </div>
+                <div>
+                  <h4 class="title"><a href="tests/pokemon_test/index.html" class="stretched-link">Pokémon</a></h4>
+                  <p class="description">Descubre que personaje de Pokémon eres.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-item d-flex position-relative h-100">
+                <div class="img img-cuestionario me-4">
+                  <img src="assets/img/cuestionario-1.png" class="img-fluid" alt="test2">
+                </div>
+                <div>
+                  <h4 class="title"><a href="tests/jujustu_test/index.html" class="stretched-link">Jujutsu Kaisen</a></h4><!---enlace al cuestionario-->
+                  <p class="description">Descubre que personaje de Jujutsu Kaisen eres.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-item d-flex position-relative h-100">
+                <div class="img img-cuestionario me-4">
+                  <img src="assets/img/cuestionario-2.png" class="img-fluid" alt="test3">
+                </div>
+                <div>
+                  <h4 class="title"><a href="tests/onePiece_test/index.html" class="stretched-link">One Piece</a></h4>
+                  <p class="description">Descubre que personaje de One Piece eres.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-item d-flex position-relative h-100">
+                <div class="img img-cuestionario me-4">
+                  <img src="assets/img/cuestionario-4.png" class="img-fluid" alt="test4">
+                </div>
+                <div>
+                  <h4 class="title"><a href="tests/dragonBall_test/index.html" class="stretched-link">Dragon Ball</a></h4>
+                  <p class="description">Descubre que personaje de Dragon Ball eres.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
+  <!-- Carrusel lateral izquierdo -->
+
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4 justify-content-center">
+
+        <div class="col-lg-6 col-md-6 footer-about text-center">
+          <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+            <span class="sitename">KoeShiru</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p><strong>Email:</strong> <span>koeshiru@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex justify-content-center mt-4">
+            <a href="https://x.com" target="_blank"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://es.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 footer-links text-start">
+          <h4>Links</h4>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-chevron-right"></i> <a href="../index.html">Inicio</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="sobre_nosotros/index.html">Sobre nosotros</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="contactanos/index.html">Contáctanos</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="privacidad/index.html">Política de privacidad</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="preguntas_frecuentes/index.html">Preguntas frecuentes</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="container copyright text-center mt-4">
+      <p>&copy; 2025 Todos los derechos reservados a KoeShiru.</p>
+      <div class="credits">
+        <p>
+          <a href="aviso_legal/index.html" class="text-white me-3">Aviso Legal</a>
+          <a href="privacidad/index.html" class="text-white">Política de Privacidad</a>
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

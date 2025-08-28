@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8
+    container_name: tfg-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: koe_shiru
+      MYSQL_USER: estudiante
+      MYSQL_PASSWORD: estudiante
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./bbdd:/docker-entrypoint-initdb.d
+    networks:
+      - tfg-network
+
+  backend:
+    build: ./back
+    container_name: tfg-backend
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+    environment:
+      PORT: 8080
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/koe_shiru?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: estudiante
+      SPRING_DATASOURCE_PASSWORD: estudiante
+      SPRING_MAIL_HOST: smtp.gmail.com
+      SPRING_MAIL_PORT: 587
+      SPRING_MAIL_USERNAME: koeshiru@gmail.com
+      SPRING_MAIL_PASSWORD: zuxkujrrxnovosed
+      PAYPAL_CLIENT_ID: AQZpNOmoZ5qAaD7EJW0IoO4y0GUh-I45_yFbSBITsjAdkyCmg5UcxCiIyemJ0lgWxxqu8-YEO38Z0kaW
+      PAYPAL_CLIENT_SECRET: EAesdDp8o56CzNOBxzjgXVoVWER5OBHXmjSj_y2za6P-RVgg7DMQCvbbgLZCsDOJOEvrIQS6D5UP8lD1
+      PAYPAL_MODE: sandbox
+    networks:
+      - tfg-network
+
+  frontend:
+    build: ./front
+    container_name: tfg-frontend
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+    networks:
+      - tfg-network
+
+networks:
+  tfg-network:
+    driver: bridge

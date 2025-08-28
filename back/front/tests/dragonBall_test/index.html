@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descubre qué personaje eres</title>
+    <link rel="icon" type="image/x-icon" href="../../assets/img/logo_sakura.png">
+    <link rel="stylesheet" href="../estilos.css" />
+    <script src="cuestionario.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  </head>
+  <body class="d-flex justify-content-center align-items-center vh-100 bg-dark text-light">
+    <div class="boton-fijo ms-4">
+      <a href="../../index.html#footer" class="btn btn-secondary btn-lg shadow rounded-pill transform-hover">
+        <i  class="bi bi-arrow-left-circle me-2 fs-4"></i> Volver
+      </a>
+    </div>
+    <!--Inicio-->
+    <div class="inicio container">
+      <h2 class="mb-5">¿Qué personaje de Dragon Ball eres?</h2>
+      <img class="img-fluid" src="../imagenes/dragon_ball/portada_dragonball.jpg" alt="Imagen de inicio">
+      <br /><br />
+      <button class="boton_empezar">Empezar</button>
+    </div>
+
+    <!--Preguntas-->
+    <div class="carrusel_container container">
+      <div class="carrusel">
+        <div class="question">
+          <img class="mb-5 img-fluid" src="../imagenes/dragon_ball/Kamehameha.jpg" alt="imagen_kamehameha">
+          <p class="mb-5">¿Qué habilidad te gustaría tener?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question1" id="habilidad1" data-score="5">
+            <label class="form-check-label" for="habilidad1">Kamehameha</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question1" id="habilidad2" data-score="10">
+            <label class="form-check-label" for="habilidad2">Teletransportación</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question1" id="habilidad3" data-score="15">
+            <label class="form-check-label" for="habilidad3">Transformación en Super Saiyan</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question1" id="habilidad4" data-score="20">
+            <label class="form-check-label" for="habilidad4">Inteligencia táctica</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <img class="mb-5 img-fluid" src="../imagenes/dragon_ball/capsule_corp.jpg" alt="imagen_corp_capsule">
+          <p class="mb-5">¿Qué lugar te gustaría explorar?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question2" id="lugar" data-score="5">
+            <label class="form-check-label" for="lugar1">La Corporación Cápsula</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question2" id="lugar2" data-score="10">
+            <label class="form-check-label" for="lugar2">La Tierra Sagrada de los Kaio</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question2" id="lugar3" data-score="15">
+            <label class="form-check-label" for="lugar3">El Planeta Namek</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question2" id="lugar4" data-score="20">
+            <label class="form-check-label" for="lugar4">El Torneo de Poder</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <img class="mb-5 img-fluid" src="../imagenes/dragon_ball/z_fighters.jpg" alt="imagen_dbz_figthers">
+          <p class="mb-5">¿Qué tipo de compañero prefieres en una batalla?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question3" id="companero1" data-score="5">
+            <label class="form-check-label" for="companero1">Leal y fuerte (como Krillin)</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question3" id="companero2" data-score="10">
+            <label class="form-check-label" for="companero2">Divertido y travieso (como Goten)</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question3" id="companero3" data-score="15">
+            <label class="form-check-label" for="companero3">Sabio y calmado (como Piccolo)</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question3" id="companero4" data-score="20">
+            <label class="form-check-label" for="companero4">Misterioso y estratégico (como Whis)</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <img class="mb-5 img-fluid" src="../imagenes/dragon_ball/entrenamiento_kamehouse.jpg" alt="imagen_kamehouse">
+          <p class="mb-5">¿Cuál es tu clima favorito para entrenar?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question4" id="clima1" data-score="5">
+            <label class="form-check-label" for="clima1">Soleado y cálido</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question4" id="clima2" data-score="10">
+            <label class="form-check-label" for="clima2">Lluvioso y fresco</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question4" id="clima3" data-score="15">
+            <label class="form-check-label" for="clima3">Ventoso y templado</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question4" id="clima4" data-score="20">
+            <label class="form-check-label" for="clima4">Tormentoso y salvaje</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <img class="mb-5 img-fluid" src="../imagenes/dragon_ball/combate_dragonball.jpg" alt="imagen_combate">
+          <p class="mb-5">¿Qué tipo de combate prefieres?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question5" id="combate1" data-score="5">
+            <label class="form-check-label" for="combate1">Combate cuerpo a cuerpo</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question5" id="combate2" data-score="10">
+            <label class="form-check-label" for="combate2">Uso de armas (como Trunks)</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question5" id="combate3" data-score="15">
+            <label class="form-check-label" for="combate3">Poderes Ki especiales</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question5" id="combate4" data-score="20">
+            <label class="form-check-label" for="combate4">Estrategia y planificación</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <img class="mb-5 img-fluid" src="../imagenes/dragon_ball/comida_goku.jpg" alt="imagen_comida_goku">
+          <p class="mb-5">Elige una comida favorita en el mundo de Dragon Ball</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question6" id="comida1" data-score="5">
+            <label class="form-check-label" for="comida1">Montañas de carne</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question6" id="comida2" data-score="10">
+            <label class="form-check-label" for="comida2">Bolas de arroz</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question6" id="comida3" data-score="15">
+            <label class="form-check-label" for="comida3">Sopa miso</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question6" id="comida4" data-score="20">
+            <label class="form-check-label" for="comida4">Ramen</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <img class="mb-5 img-fluid" src="../imagenes/dragon_ball/z_team.jpg" alt="imagen_teamZ">
+          <p class="mb-5">¿Qué valor consideras más importante en un equipo?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question7" id="valor1" data-score="5">
+            <label class="form-check-label" for="valor1">Lealtad</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question7" id="valor2" data-score="10">
+            <label class="form-check-label" for="valor2">Diversión</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question7" id="valor3" data-score="15">
+            <label class="form-check-label" for="valor3">Coraje</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question7" id="valor4" data-score="20">
+            <label class="form-check-label" for="valor4">Justicia</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <img class="mb-5 img-fluid" src="../imagenes/dragon_ball/nave_saiyan.jpg" alt="imagen_nave_saiyan">
+          <p class="mb-5">¿Qué tipo de transporte prefieres para viajar?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question8" id="barco1" data-score="5">
+            <label class="form-check-label" for="barco1">Nube voladora</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question8" id="barco2" data-score="10">
+            <label class="form-check-label" for="barco2">Nave espacial Saiyan</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question8" id="barco3" data-score="15">
+            <label class="form-check-label" for="barco3">Cápsulas de viaje</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question8" id="barco4" data-score="20">
+            <label class="form-check-label" for="barco4">Vuelo propio con Ki</label>
+          </div>
+        </div>
+
+        <div class="question">
+          <img class="mb-5 img-fluid" src="../imagenes/dragon_ball/esferas_dragon.jpg" alt="imagen_esferas_dragon">
+          <p class="mb-5">¿Cuál es tu sueño más grande?</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question9" id="sueño1" data-score="5">
+            <label class="form-check-label" for="sueño1">Convertirte en el más fuerte del universo</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question9" id="sueño2" data-score="10">
+            <label class="form-check-label" for="sueño2">Vivir en paz con los tuyos</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question9" id="sueño3" data-score="15">
+            <label class="form-check-label" for="sueño3">Proteger a tus seres queridos</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="question9" id="sueño4" data-score="20">
+            <label class="form-check-label" for="sueño4">Descubrir el origen del poder divino</label>
+          </div>
+        </div>
+
+        <div class="resultado">
+          <h2 id="tipo_obtenido"></h2>
+          <img class="mb-5 img-fluid" id="imagen_tipo" alt="imagen_final">
+          <p class="" id="parrafo_resultado"></p>
+        </div>
+      </div>
+      <button id="avanzar" class="boton_avanzar mt-5"><i class="bi bi-arrow-right-circle"></i></button>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    </div>
+  </body>
+</html>
